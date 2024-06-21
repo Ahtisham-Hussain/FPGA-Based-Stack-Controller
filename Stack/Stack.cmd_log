@@ -1,0 +1,14 @@
+xst -intstyle ise -filter "E:/Stack/iseconfig/filter.filter" -ifn "E:/Stack/Stack.xst" -ofn "E:/Stack/Stack.syr" 
+xst -intstyle ise -filter "E:/Stack/iseconfig/filter.filter" -ifn "E:/Stack/Stack.xst" -ofn "E:/Stack/Stack.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 Stack.ngc Stack.ngd  
+map -filter "E:/Stack/iseconfig/filter.filter" -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Stack_map.ncd Stack.ngd Stack.pcf 
+par -filter "E:/Stack/iseconfig/filter.filter" -w -intstyle ise -ol high -mt off Stack_map.ncd Stack.ncd Stack.pcf 
+trce -filter E:/Stack/iseconfig/filter.filter -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Stack.twx Stack.ncd -o Stack.twr Stack.pcf 
+xst -intstyle ise -filter "E:/Stack/iseconfig/filter.filter" -ifn "E:/Stack/Stack.xst" -ofn "E:/Stack/Stack.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 Stack.ngc Stack.ngd  
+map -filter "E:/Stack/iseconfig/filter.filter" -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Stack_map.ncd Stack.ngd Stack.pcf 
+par -filter "E:/Stack/iseconfig/filter.filter" -w -intstyle ise -ol high -mt off Stack_map.ncd Stack.ncd Stack.pcf 
+trce -filter E:/Stack/iseconfig/filter.filter -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Stack.twx Stack.ncd -o Stack.twr Stack.pcf 
+xst -intstyle ise -filter "E:/Stack/iseconfig/filter.filter" -ifn "E:/Stack/Stack.xst" -ofn "E:/Stack/Stack.syr" 
+xst -intstyle ise -filter "E:/Stack/iseconfig/filter.filter" -ifn "E:/Stack/Stack.xst" -ofn "E:/Stack/Stack.syr" 
+xst -intstyle ise -filter "E:/Stack/iseconfig/filter.filter" -ifn "E:/Stack/Stack.xst" -ofn "E:/Stack/Stack.syr" 
